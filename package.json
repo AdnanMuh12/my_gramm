@@ -6,12 +6,13 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:migrate:prod": "NODE_ENV=production npx sequelize db:migrate"
+    "db:migrate:prod": "cross-env NODE_ENV=production npx sequelize db:migrate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "sequelize": "^6.34.0",
     "sequelize-cli": "^6.6.2"
   },
